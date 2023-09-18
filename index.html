@@ -397,21 +397,31 @@
                 </ul>
                
         </div>
-        <form class="foot-form">
-            <div class="foot-form-wrapper"><label for="foot-email" class="foot-form-label">Subscribe</label><div class="foot-input-wrapper"><input type="email" class="foot-form-input"
+        <div class="foot-form-box">
+            <p class="foot-form-p">Subscribe</p>
+            <form class="foot-form">
+            <label for="foot-email" class="foot-form-label"><input type="email" class="foot-form-input"
                 id="foot-email" 
                 name="foot_email"
                 placeholder="E-mail">
-            <button class="foot-form-btn" type="submit">Subscribe</button></div>
+            </label>
+                
+            <button class="foot-form-btn" type="submit">Subscribe <svg class="foot-form-icon" width="24"
+               height="24">
+            <use href="./images/icons.svg#icon-telegram"></use>
+        </svg>
+            </button>
+        </div>
                 </div>
         </form>
-            </div>
+            
+        
             
     </footer>
     
-    <div class="backdrop is-open">
+    <div class="backdrop is-ope">
         <div class="modal">
-            <button class="close-btn">
+            <button class="close-btn" type="button">
                 <svg class="close-btn-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close">
                     </use>
@@ -423,9 +433,9 @@
                 <div class="info-field-wrapper">
                     <label class="info-field-label" for="user-name">Name</label>
                     <div class="info-form-input-wrapper">
-                        <input type="text" class="info-field-input" id="user-name" name="user_name" pattern="[a-zA-zа-яА-яіІїЇєЄґҐ']+"
+                        <input type="text" class="info-field-input" id="user-name" name="user-name" pattern="[a-zA-zа-яА-яіІїЇєЄґҐ']+"
                     required>
-                    <svg class="info-form-icon" width="18" height="18" aria-label="user icon"><use href="./images/icons.svg#icon-contacts">
+                    <svg class="info-form-icon" width="18" height="24" aria-label="user icon"><use href="./images/icons.svg#icon-contacts">
 
                     </use>
                 </svg>
@@ -462,15 +472,15 @@
             </div>
                 <div class="info-field-wrapper">
                     <label class="info-field-label" for="user-comment">Comment</label>
-                        <textarea class="info-form-comment" name="user_comment" id="user-comment" 
+                        <textarea class="info-form-comment" name="user-comment" id="user-comment" 
                         placeholder="Text input"></textarea>
                     
                 </div>
                 <div class="info-checkbox-wrapper">
-                    <input class="info-checkbox visually-hidden"  type="checkbox" id="user-privacy" name="user_privacy" value="true" required>
+                    <input class="info-checkbox visually-hidden"  type="checkbox" id="user-privacy" name="user-privacy" value="true" required>
                     <label for="user-privacy" class="info-form-label">
                         <span class="info-own-checkbox">
-                            <svg class="info-own-checkbox-icon" width="10" height="9">
+                            <svg class="info-own-checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-tick">
 
                                 </use>
